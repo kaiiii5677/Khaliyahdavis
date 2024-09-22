@@ -1,0 +1,391 @@
+/* CSS Variables */
+:root {
+    --primary-color: #6a836a;
+    --secondary-color: #f5f2eb;
+    --text-color: #3b3b3b;
+    --light-bg: rgba(255, 255, 255, 0.9);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    height: 100%;
+    line-height: 1.8;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(90deg, #e1ded1 0%, #d0cbb7 100%);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-family: 'Georgia', serif;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(106, 131, 106, 0.2);
+    color: var(--primary-color);
+}
+
+/* Common container styling */
+.box-container, .home-container, main {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Modern Box Styling */
+.box {
+    background-color: var(--light-bg);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px var(--shadow-color);
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.box h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
+}
+
+.box p, .box ul li {
+    font-size: 1.2rem;
+    color: #4b4b4b;
+    margin-bottom: 20px;
+}
+
+.box ul {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+/* Welcome Box (Home Page) */
+.welcome-box {
+    text-align: center;
+    padding: 60px 30px;
+    background-color: #f7f6f1;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.welcome-box h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-family: 'Georgia', serif;
+    margin-bottom: 25px;
+}
+
+.welcome-box p {
+    font-size: 1.4rem;
+    color: #555;
+}
+
+/* About Section (Home Page) */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    background-color: #fffaf0;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.about-image img {
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px var(--shadow-color);
+}
+
+.about-content {
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+.about-content h2 {
+    font-size: 2.4rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.3rem;
+    color: #4b4b4b;
+    line-height: 1.8;
+}
+
+/* Personality Test Section */
+.test-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+#personality-test {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px var(--shadow-color);
+    width: 100%;
+    text-align: left;
+    font-family: 'Georgia', serif;
+}
+
+#personality-test img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Inner Boxes Styling */
+.inner-boxes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.inner-box {
+    padding: 20px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0px 2px 10px var(--shadow-color);
+    margin: 10px 0;
+}
+
+/* Hero Section Styling */
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font: goe;
+}
+
+#hero-section {
+    flex: 1;
+    background-color: var(--secondary-color);
+    padding: 40px;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    font-family: 'Georgia', serif;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Common Button Styles */
+button, a.button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, a.button:hover {
+    background-color: #557a56;
+}
+
+/* Summary Reflection Styles */
+.summary-reflection {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px var(--shadow-color);
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+}
+
+/* Common styles for personal and professional pages */
+.professional-page, .personal-development {
+    background-color: var(--secondary-color);
+    padding: 40px;
+    font-family: 'Georgia', serif;
+}
+
+/* Box Styles */
+.box {
+    background-color: var(--light-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px var(--shadow-color);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+/* Common container styling */
+.box-container, .home-container, main {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: stretch; /* Added to ensure all boxes stretch to equal height */
+}
+
+/* Modern Box Styling */
+.box {
+    background-color: var(--light-bg);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px var(--shadow-color);
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+    display: flex; /* Added to allow flex properties inside the box */
+    flex-direction: column; /* Added to stack content vertically */
+    justify-content: space-between; /* Added to distribute space between items */
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+/* Heading Styles */
+.box h2, .box h3 {
+    color: var(--primary-color);
+}
+
+.box p, .box ul {
+    color: #4b4b4b;
+}
+
+.references {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.references h2 {
+    margin-top: 0;
+    font-family: 'Georgia', serif;
+}
+
+.references ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.references li {
+    margin: 10px 0;
+}
+
+#enjoyment-box {
+    margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .box-container, .professional-box-container {
+        padding: 10px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    .summary-reflection {
+        margin: 20px 10px;
+    }
+
+    .welcome-box h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome-box p {
+        font-size: 1.2rem;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+}
